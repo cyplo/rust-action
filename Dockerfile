@@ -5,6 +5,7 @@ LABEL "com.github.actions.description"="Rust"
 LABEL "com.github.actions.icon"="play-circle"
 LABEL "com.github.actions.color"="gray-dark"
 
+RUN rustup default stable
 RUN rustup component add clippy
 RUN rustup component add rustfmt
 
